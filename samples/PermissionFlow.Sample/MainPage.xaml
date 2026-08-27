@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PermissionFlow.Sample.MainPage"
+             Title="Permission Flow">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+            <Label Text="Plugin.Maui.PermissionFlow"
+                   FontSize="26"
+                   FontAttributes="Bold" />
+            <Label x:Name="PlatformLabel"
+                   Text="Platform: unknown"
+                   TextColor="{AppThemeBinding Light=#555555, Dark=#BBBBBB}" />
+
+            <Label Text="Named flows" FontAttributes="Bold" />
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="8" RowDefinitions="Auto,Auto" RowSpacing="8">
+                <Button Text="Scan" Clicked="OnScanClicked" />
+                <Button Grid.Column="1" Text="Location" Clicked="OnLocationClicked" />
+                <Button Grid.Row="1" Text="Notifications" Clicked="OnAlertsClicked" />
+                <Button Grid.Row="1" Grid.Column="1" Text="Photos" Clicked="OnLibraryClicked" />
+            </Grid>
+
+            <Label Text="Control" FontAttributes="Bold" />
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="8" RowDefinitions="Auto,Auto" RowSpacing="8">
+                <Button Text="Refresh status" Clicked="OnRefreshClicked" />
+                <Button Grid.Column="1" Text="Open Settings" Clicked="OnSettingsClicked" />
+                <Button Grid.Row="1" Text="Reset history" Clicked="OnResetClicked" />
+                <Button Grid.Row="1" Grid.Column="1" Text="Force scan" Clicked="OnForceScanClicked" />
+            </Grid>
+
+            <HorizontalStackLayout Spacing="12">
+                <Switch x:Name="LoggingSwitch" IsToggled="True" Toggled="OnLoggingToggled" />
+                <Label Text="Enable logging" VerticalOptions="Center" />
+            </HorizontalStackLayout>
+
+            <Label Text="Snapshot" FontAttributes="Bold" />
+            <Label x:Name="SnapshotLabel" LineBreakMode="WordWrap" />
+
+            <Label Text="Last result" FontAttributes="Bold" />
+            <Label x:Name="ResultLabel" LineBreakMode="WordWrap" Text="Run a flow to see orchestration." />
+
+            <Label Text="Log" FontAttributes="Bold" />
+            <Border Stroke="{AppThemeBinding Light=#DDDDDD, Dark=#444444}"
+                    StrokeThickness="1"
+                    Padding="12"
+                    StrokeShape="RoundRectangle 8">
+                <Label x:Name="LogLabel"
+                       Text="Logging is enabled."
+                       FontSize="12"
+                       LineBreakMode="WordWrap" />
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

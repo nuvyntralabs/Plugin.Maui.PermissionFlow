@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net10.0;net10.0-android;net10.0-ios</TargetFrameworks>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);CS1591</NoWarn>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+
+		<RootNamespace>Plugin.Maui.PermissionFlow</RootNamespace>
+		<AssemblyName>Plugin.Maui.PermissionFlow</AssemblyName>
+		<PackageId>Plugin.Maui.PermissionFlow</PackageId>
+		<Title>.NET MAUI PermissionFlow Plugin</Title>
+		<Description>Intelligent permission orchestration for .NET MAUI on Android and iOS. Named feature flows, pre-prompt rationales, denial cooldowns, permanent-denial settings handoff, and required vs optional steps.</Description>
+		<PackageTags>dotnet-maui;maui;permissions;orchestration;camera;location;notifications;android;ios;plugin;rationale</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageProjectUrl>https://github.com/NiladriPadhy/Plugin.Maui.PermissionFlow</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/NiladriPadhy/Plugin.Maui.PermissionFlow</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<Authors>NugetWorld</Authors>
+		<Company>NugetWorld</Company>
+		<Copyright>Copyright © NugetWorld</Copyright>
+		<Version>1.0.0</Version>
+		<PackageOutputPath>$(MSBuildThisFileDirectory)..\..\artifacts</PackageOutputPath>
+		<IsPackable>true</IsPackable>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<PackageReleaseNotes>Initial release: named permission flows, rationale and settings prompts, denial cooldowns, and Android/iOS orchestration.</PackageReleaseNotes>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
+		<None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="Plugin.Maui.PermissionFlow.Tests" />
+	</ItemGroup>
+
+</Project>
