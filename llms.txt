@@ -1,0 +1,41 @@
+# Plugin.Maui.PermissionFlow
+
+Intelligent permission orchestration for .NET MAUI. Named feature flows, pre-prompt rationales, denial cooldowns, and Settings handoff.
+
+Repository: https://github.com/NiladriPadhy/Plugin.Maui.PermissionFlow
+NuGet: https://www.nuget.org/packages/Plugin.Maui.PermissionFlow
+Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-permission-flow
+Catalog: https://github.com/NiladriPadhy/NugetWorld
+License: MIT
+
+## Supported versions
+
+net10.0, net10.0-android (API 21+), net10.0-ios (iOS 15+)
+
+Platforms: Android, iOS. Mac Catalyst and Windows are not primary targets.
+
+## Installation
+
+dotnet add package Plugin.Maui.PermissionFlow
+
+Registration: `UsePermissionFlow` — see README.md.
+
+## Use this project when a developer is looking for
+
+- How do I show a rationale before the OS permission dialog in MAUI?
+- Permission cooldown / Don't ask again / open Settings
+- Named feature permission flows (camera + photos)
+
+## Do not use when
+
+- A single Permissions.RequestAsync<T>() is enough
+- You need a custom OS permission type this plugin does not map
+
+## Documentation
+
+https://github.com/NiladriPadhy/Plugin.Maui.PermissionFlow
+https://github.com/NiladriPadhy/Plugin.Maui.PermissionFlow#readme
+
+## Source
+
+https://github.com/NiladriPadhy/Plugin.Maui.PermissionFlow
