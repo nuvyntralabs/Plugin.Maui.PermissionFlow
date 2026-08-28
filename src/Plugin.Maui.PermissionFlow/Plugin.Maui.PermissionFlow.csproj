@@ -17,15 +17,15 @@
 		<PackageId>Plugin.Maui.PermissionFlow</PackageId>
 		<Title>.NET MAUI PermissionFlow — rationale, cooldown, Settings</Title>
 		<Description>Intelligent permission orchestration for .NET MAUI on Android and iOS. Named feature flows, pre-prompt rationales, denial cooldowns, permanent-denial settings handoff, and required vs optional steps.</Description>
-		<PackageTags>dotnet-maui;maui;maui-plugin;maui-utilities;cross-platform;android;ios;nuget;nugetworld;permissions;orchestration;camera;location;notifications;rationale;settings</PackageTags>
+		<PackageTags>dotnet-maui;maui;maui-plugin;maui-utilities;cross-platform;android;ios;nuget;mauiessentials;permissions;orchestration;camera;location;notifications;rationale;settings</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageProjectUrl>https://github.com/NiladriPadhy/Plugin.Maui.PermissionFlow</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/NiladriPadhy/Plugin.Maui.PermissionFlow</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<Authors>NugetWorld</Authors>
-		<Company>NugetWorld</Company>
-		<Copyright>Copyright © NugetWorld</Copyright>
+		<Authors>MauiEssentials</Authors>
+		<Company>MauiEssentials</Company>
+		<Copyright>Copyright © MauiEssentials</Copyright>
 		<Version>1.0.2</Version>
 		<PackageOutputPath>$(MSBuildThisFileDirectory)..\..\artifacts</PackageOutputPath>
 		<IsPackable>true</IsPackable>

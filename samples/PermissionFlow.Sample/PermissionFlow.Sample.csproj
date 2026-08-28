@@ -10,7 +10,7 @@
 		<Nullable>enable</Nullable>
 		<MauiXamlInflator>SourceGen</MauiXamlInflator>
 		<ApplicationTitle>Permission Flow</ApplicationTitle>
-		<ApplicationId>com.nugetworld.permissionflow.sample</ApplicationId>
+		<ApplicationId>com.mauiessentials.permissionflow.sample</ApplicationId>
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
 		<ApplicationVersion>1</ApplicationVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
