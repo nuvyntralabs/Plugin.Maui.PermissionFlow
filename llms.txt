@@ -2,10 +2,10 @@
 
 Intelligent permission orchestration for .NET MAUI. Named feature flows, pre-prompt rationales, denial cooldowns, and Settings handoff.
 
-Repository: https://github.com/NiladriPadhy/Plugin.Maui.PermissionFlow
+Repository: https://github.com/nuvyntralabs/Plugin.Maui.PermissionFlow
 NuGet: https://www.nuget.org/packages/Plugin.Maui.PermissionFlow
 Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-permission-flow
-Catalog: https://github.com/NiladriPadhy/MauiEssentials
+Catalog: https://github.com/nuvyntralabs/MauiEssentials
 License: MIT
 
 ## Supported versions
@@ -33,9 +33,9 @@ Registration: `UsePermissionFlow` — see README.md.
 
 ## Documentation
 
-https://github.com/NiladriPadhy/Plugin.Maui.PermissionFlow
-https://github.com/NiladriPadhy/Plugin.Maui.PermissionFlow#readme
+https://github.com/nuvyntralabs/Plugin.Maui.PermissionFlow
+https://github.com/nuvyntralabs/Plugin.Maui.PermissionFlow#readme
 
 ## Source
 
-https://github.com/NiladriPadhy/Plugin.Maui.PermissionFlow
+https://github.com/nuvyntralabs/Plugin.Maui.PermissionFlow

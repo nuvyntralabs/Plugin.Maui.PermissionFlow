@@ -1,6 +1,6 @@
 # Plugin.Maui.PermissionFlow
 
-[NuGet](https://www.nuget.org/packages/Plugin.Maui.PermissionFlow) · [GitHub](https://github.com/NiladriPadhy/Plugin.Maui.PermissionFlow)
+[NuGet](https://www.nuget.org/packages/Plugin.Maui.PermissionFlow) · [GitHub](https://github.com/nuvyntralabs/Plugin.Maui.PermissionFlow)
 
 Intelligent permission orchestration for .NET MAUI on **Android** and **iOS**.
 
