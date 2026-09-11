@@ -4,7 +4,7 @@ Intelligent permission orchestration for .NET MAUI. Named feature flows, pre-pro
 
 Repository: https://github.com/nuvyntralabs/Plugin.Maui.PermissionFlow
 NuGet: https://www.nuget.org/packages/Plugin.Maui.PermissionFlow
-Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-permission-flow
+Paper: https://nuvyntralabs.github.io/packages/plugin-maui-permission-flow/
 Catalog: https://github.com/nuvyntralabs/MauiEssentials
 License: MIT
 
